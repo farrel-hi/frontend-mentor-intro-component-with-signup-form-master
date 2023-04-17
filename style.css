@@ -1,4 +1,204 @@
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+*{
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Poppins',Tahoma, Verdana, sans-serif;
+}
+
+/* Universal Rules */
+.description-container{
+    color:white;
+}
+
+h1{
+    font-size:25px;
+    font-weight:700;
+}
+
+strong{
+    font-weight: 600;
+}
+
+.free-trial{
+    padding: 20px 20% 20px 20%;
+    margin-bottom: 30px;
+
+    color:white;
+    border-radius: 10px;
+    background-color:hsl(248, 32%, 49%);
+    box-shadow: 0px 8px rgba(0, 0, 0, 0.2);
+}
+
+.main-form{
+    border-radius: 10px;
+    background-color:white;
+    box-shadow: 0px 8px rgba(0, 0, 0, 0.2);
+
+    padding:20px;
+}
+
+input{
+    border-radius: 10px;
+    padding:10px;
+    margin-bottom: 10px;
+
+    background-color: white;
+    border-color: rgba(0, 0, 0, 0.2);
+}
+
+input::placeholder{
+    font-size: 14px;
+    color:rgba(55,53,65,0.8);
+    font-weight:bold ;
+}
+
+input[type="text"], input[type="email"], input[type="password"]{
+    width: 90%;
+}
+
+input[type="submit"]{
+    width: 100%;
+
+    background-color: hsl(154, 59%, 51%);
+    color:white;
+}
+
+.terms-container{
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+p.terms, p.terms > strong{
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+p.terms >strong{
+    color:hsl(0, 100%, 74%) ;
+}
+
+
+
+/* Desktop Rules (Width: 1440px) */
+@media only screen and (min-width: 1440px) {
+    body{
+        min-height: 100vh;
+        background-image: url('./images/bg-intro-desktop.png');
+        background-color: hsl(0, 100%, 74%);
     
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .main-container{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+    
+        margin-left:8%;
+        margin-right: 8%;
+    }
+    
+    .description-container{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: left;
+        text-align: left;
+    
+        margin-top: 10vh;
+        margin-bottom: 5vh;    
+    }
+    
+    .form-container{
+        min-width: 800px;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .main-form{
+        min-width: 75%;
+        min-height: 60vh;
+
+        display:flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input{
+        min-width: 550px;
+        min-height: 30px;
+    }
+
+    h1{
+        font-size: 45px;
+    }
+    footer{
+        position:absolute;
+        top:95vh;
+    }
+}
+
+/* Mobile Rules (Width: 375px) */
+@media only screen and (max-width: 375px){
+    body{   
+        min-height: 100vh;
+    
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        background-image: url('./images/bg-intro-mobile.png');
+        background-color: hsl(0, 100%, 74%);
+    }
+
+    .main-container{
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        margin-left:8%;
+        margin-right: 8%;
+    }
+
+    .description-container{
+        height: 220px;
+
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        margin-top: 10vh;
+        margin-bottom: 5vh;
+
+    }
+
+    .form-container{
+        min-width: 300px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    input[type="text"], input[type="email"], input[type="password"]{
+        width: 90%;
+    }
+
+    footer{
+        margin-top:20px;
+    
+        text-align: center;
+        font-size: 10px;
+    }
 }
