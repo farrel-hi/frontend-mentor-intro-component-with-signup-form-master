@@ -5,6 +5,17 @@
     font-family: 'Poppins',Tahoma, Verdana, sans-serif;
 }
 
+body{
+    min-height: 100vh;
+    background-image: url('./images/bg-intro-desktop.png');
+    background-color: hsl(0, 100%, 74%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
 /* Universal Rules */
 .description-container{
     color:white;
@@ -77,21 +88,16 @@ p.terms >strong{
     color:hsl(0, 100%, 74%) ;
 }
 
+p.alert-text{
+    margin-bottom: 10px;
 
+    text-align: right;
+    font-size: 10px;
+    color:hsl(0, 100%, 74%);
+}
 
 /* Desktop Rules (Width: 1440px) */
 @media only screen and (min-width: 1440px) {
-    body{
-        min-height: 100vh;
-        background-image: url('./images/bg-intro-desktop.png');
-        background-color: hsl(0, 100%, 74%);
-    
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-    }
-    
     .main-container{
         display: flex;
         justify-content: center;
@@ -137,6 +143,15 @@ p.terms >strong{
         min-height: 30px;
     }
 
+    input[type="text"], input[type="email"], input[type="password"]{
+        min-height: 50px;   
+    }
+
+    input[type="submit"]{    
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
     h1{
         font-size: 45px;
     }
@@ -148,15 +163,10 @@ p.terms >strong{
 
 /* Mobile Rules (Width: 375px) */
 @media only screen and (max-width: 375px){
-    body{   
-        min-height: 100vh;
-    
-        flex-direction: column;
+    body{       
         justify-content: space-between;
-        align-items: center;
 
         background-image: url('./images/bg-intro-mobile.png');
-        background-color: hsl(0, 100%, 74%);
     }
 
     .main-container{
