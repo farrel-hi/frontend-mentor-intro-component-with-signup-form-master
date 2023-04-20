@@ -30,16 +30,16 @@
         </p>
       </div>
       <div class="main-form">
-        <form action="">
-          <input type="text" placeholder="First Name">
-          <p class="alert-text firt-name-notice"><em></em></p>
-          <input type="text" placeholder="Last Name">
-          <p class="alert-text last-name-notice"><em></em></p>
-          <input type="email" placeholder="Email Address">
-          <p class="alert-text email-notice"><em></em></p>
-          <input type="password" placeholder="Password">
-          <p class="alert-text password-notice"><em></em></p>
-          <input type="submit" value="CLAIM YOUR FREE TRIAL"> 
+        <form>
+          <input type="text" placeholder="First Name" id="firstName">
+          <em><p class="alert-text" id="firstName-notice"></p></em>
+          <input type="text" placeholder="Last Name" id="lastName">
+          <em><p class="alert-text" id="lastName-notice"></p></em>
+          <input type="email" placeholder="Email Address" id="emailAddress">
+          <em><p class="alert-text" id="emailAddress-notice"><em></p></em>
+          <input type="password" placeholder="Password" id="password">
+          <em><p class="alert-text" id="password-notice"><em></p></em>
+          <input type="submit" value="CLAIM YOUR FREE TRIAL" onclick="checkInput()"> 
         </form>
         <div class="terms-container">
           <p class="terms">By clicking the button, you are agreeing to our <strong>Terms and Services</strong></p>
@@ -53,5 +53,7 @@
       Coded by <a href="#">Farrel Haridhi Indallah</a>.
     </p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
