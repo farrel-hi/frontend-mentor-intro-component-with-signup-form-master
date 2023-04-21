@@ -32,7 +32,7 @@ function checkCategoryValue(value,category, notice){
             document.getElementById(category+"-notice").innerHTML = "";
         }
     }
-    event.preventDefault();
+    event.preventDefault();//prevent page from restarting
 }
 
 
@@ -54,9 +54,9 @@ function changePlaceholder(cat){
     input.setAttribute("placeholder", "");
     input.style.backgroundImage = "url('./images/icon-error.svg')";
     input.style.backgroundRepeat = "no-repeat";
+    input.style.color = "hsl(0, 100%, 74%)";
     input.style.backgroundSize = "20px";
-    input.style.margin = "0";
-    input.style.padding = "0";
     input.style.backgroundPosition = "right center";
     input.style.backgroundPositionX = "calc(100% - 30px)"; // move the image 30 pixels to the left 
+    input.style.borderColor = "hsl(0, 100%, 74%)";
 }
