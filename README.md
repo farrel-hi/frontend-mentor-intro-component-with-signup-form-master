@@ -34,7 +34,7 @@ Mobile Screenshot:
 ### Links
 
 - Solution URL: [GitHub Solution URL here](https://github.com/farrel-hi/frontend-mentor-intro-component-with-signup-form-master)
-- Live Site URL: [Live site URL here](#)
+- Live Site URL: [Live site URL here](https://farrel-hi.github.io/frontend-mentor-intro-component-with-signup-form-master/)
 
 ## My process
 
